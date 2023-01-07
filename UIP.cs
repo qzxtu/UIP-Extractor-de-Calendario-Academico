@@ -1,4 +1,4 @@
-﻿using iTextSharp.text.pdf;
+using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 using System.Net;
 using System.Text;
@@ -13,8 +13,7 @@ namespace PDFExtractor
             string url = "https://uip.edu.pa/wp-content/uploads/2022/12/UIP-WEB-CALENDARIO-ACADEMICO-LIC-TEC-IC-2023.pdf";
 
             // Descarga el archivo PDF
-            WebClient webClient1 = new();
-            WebClient webClient = webClient1;
+            WebClient webClient = new();
             byte[] data = webClient.DownloadData(url);
 
             // Convierte el array de bytes en un stream
